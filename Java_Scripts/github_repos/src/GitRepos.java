@@ -14,7 +14,7 @@ public class GitRepos {
     
     public JSONArray getJSON() throws IOException, JSONException{
 
-        String url = "https://api.github.com/users/wkeilsohn/repos";
+        String url = "https://api.github.com/users/wkeilsohn/repos?per_page=100"; // Indicate the repo number.
         URL get_url = new URL(url);
 
         HttpURLConnection con = (HttpURLConnection) get_url.openConnection();
