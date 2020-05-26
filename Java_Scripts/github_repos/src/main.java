@@ -7,7 +7,7 @@ public class main {
         try {
             GitRepos git = new GitRepos();
             ProcessRepos pros = new ProcessRepos();
-            pros.JArray(git.getJSON());
+            pros.JVec(git.getJSON());
         } catch (Exception i) {
             System.err.println(i);
         }

@@ -8,7 +8,6 @@ import java.io.IOException;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class GitRepos {
@@ -29,7 +28,6 @@ public class GitRepos {
         String reps = new String();
          while ((input_line = in.readLine()) != null){
             reps = reps.concat(input_line);
-        //    reps = reps.replace("[","").replace("]","");
          }
 
         in.close();
