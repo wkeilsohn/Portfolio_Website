@@ -1,4 +1,4 @@
-package Java_Scripts.github;
+package Java_Scripts.github_repos.src;
 /*
 import java.awt.*;
 

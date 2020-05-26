@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "/home/william/Documents/Java_Scripts/Portfolio_Site/**/*.jar"
+        ],
+        "exclude": [
+            "Java_Scripts/github_repos/lib/json-20200518.jar"
+        ]
+    }
+}

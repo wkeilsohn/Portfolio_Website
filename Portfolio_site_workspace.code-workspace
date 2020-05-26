@@ -1,0 +1,8 @@
+{
+    "settings": {
+        "java.project.referencedLibraries": [
+            "lib/**/*.jar",
+            "/home/william/Documents/Java_Scripts/Portfolio_Site/**/*.jar"
+        ]
+    }
+}
