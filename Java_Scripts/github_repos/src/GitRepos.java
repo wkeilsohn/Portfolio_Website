@@ -6,13 +6,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.io.IOException;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 
 public class GitRepos {
     
-    public JSONObject getJSON() throws IOException, JSONException{
+    public JSONArray getJSON() throws IOException, JSONException{
 
         String url = "https://api.github.com/users/wkeilsohn/repos";
         URL get_url = new URL(url);
@@ -28,13 +29,13 @@ public class GitRepos {
         String reps = new String();
          while ((input_line = in.readLine()) != null){
             reps = reps.concat(input_line);
-            reps = reps.replace("[","").replace("]","");
+        //    reps = reps.replace("[","").replace("]","");
          }
 
         in.close();
         con.disconnect();
    
-        JSONObject json = new JSONObject(reps);
+        JSONArray json = new JSONArray(reps);
         return json;
     }
 }

@@ -29,3 +29,5 @@ hs_err_pid*
 # Specific to Visual Studio
 *.code-worksapce
 Portfolio_site_workspace.code-worksapce
+/.vscode
+
