@@ -6,8 +6,6 @@ import org.json.JSONArray;
 import java.util.Vector;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 
 public class ProcessRepos {
@@ -96,7 +94,6 @@ public class ProcessRepos {
                 }
             }
         }
-    //    System.out.println(j_out_vector);
         return j_out_vector;
     }
 

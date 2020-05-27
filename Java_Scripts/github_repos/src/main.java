@@ -1,5 +1,6 @@
 package Java_Scripts.github_repos.src;
 
+import java.util.Vector;
 
 public class main {
     
@@ -7,7 +8,9 @@ public class main {
         try {
             GitRepos git = new GitRepos();
             ProcessRepos pros = new ProcessRepos();
-            pros.JVec(git.getJSON());
+            html_maker html = new html_maker();
+            Vector repos = pros.JVec(git.getJSON());
+            html.makeHTML(repos);
         } catch (Exception i) {
             System.err.println(i);
         }
