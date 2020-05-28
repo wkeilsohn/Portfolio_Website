@@ -11,8 +11,9 @@ gateway = JavaGateway()
 @app.route('/')
 def renderPage():
     git_repo_table = gateway.entry_point.outGitrepo_main()
-    git_repo_table = Markup(git_repo_table)
-    return render_template('home.html', git_repo_table = git_repo_table)
+    git_repo_table_values = Markup(git_repo_table)
+#    gateway.entry_point. # Close it?
+    return render_template('home.html', git_repo_table_values = git_repo_table_values)
 
 # Run Application
 if __name__ == '__main__':
