@@ -1,5 +1,9 @@
 # Project Specific
 
+#Flask Specific
+/venv
+__pycache__
+
 # Java Specific: https://github.com/github/gitignore/blob/master/Java.gitignore
 # Compiled class file
 *.class
